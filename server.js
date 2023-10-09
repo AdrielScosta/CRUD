@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 3333
 app.use(cors())
 
 app.use('/api', useRouter)
+app.get('/', (req, res)=>{
+    res.send("Conectado Home")
+})
 
 app.listen(PORT, ()=>{
     console.log(`App rodando na porta: ${PORT}`)

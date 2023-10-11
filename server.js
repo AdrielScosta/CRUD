@@ -3,7 +3,7 @@ const app = express()
 const useRouter = require('./src/Routers/api/Api.js')
 const cors = require('cors')
 
-const PORT = process.env.PORT || 443
+const PORT = process.env.PORT || 80
 
 app.use(cors())
 
